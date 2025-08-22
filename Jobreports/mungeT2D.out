@@ -1,0 +1,39 @@
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+           SNP Chromsome  Position EffectAllele NonEffectAllele    Beta    EAF
+        <char>     <int>     <int>       <char>          <char>   <num>  <num>
+1: 8:135908647         8 135908647            A               G -0.0020 0.2034
+2: 11:97895884        11  97895884            C               G  0.0215 0.0554
+3:   18:814730        18    814730            C               G -0.0043 0.8867
+          P  N_CAS   N_CON     Neff
+     <char>  <int>   <num>    <num>
+1:   0.6633 242283 1569730 751754.7
+2: 0.007924 242283 1569730 751754.7
+3:   0.4592 242283 1569730 751754.7
+[1] "T2D_2024.b37.filtered.SNP needs z computation."
+[1] "T2D_2024.b37.filtered.SNP doesn't has rsid."
+[1] "T2D_2024.b37.filtered.SNP doesn't need n computation."
+[1] "Actually!! T2D_2024.b37.filtered.SNP needs n computation."
+[1] "Setting effect_allele for T2D_2024.b37.filtered.SNP"
+[1] "Setting non_effect_allele for T2D_2024.b37.filtered.SNP"
+[1] "Setting FRQ for T2D_2024.b37.filtered.SNP"
+           SNP Chromsome  Position effect_allele non_effect_allele    Beta
+        <char>     <int>     <int>        <char>            <char>   <num>
+1: 8:135908647         8 135908647             A                 G -0.0020
+2: 11:97895884        11  97895884             C                 G  0.0215
+3:   18:814730        18    814730             C                 G -0.0043
+      FRQ        P  N_CAS   N_CON     Neff
+    <num>   <char>  <int>   <num>    <num>
+1: 0.2034   0.6633 242283 1569730 751754.7
+2: 0.0554 0.007924 242283 1569730 751754.7
+3: 0.8867   0.4592 242283 1569730 751754.7
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS_log_output.txt"
+
+

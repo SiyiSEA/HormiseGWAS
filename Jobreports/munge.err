@@ -1,0 +1,179 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) slurm/23.02.6
+Reading header.
+Tabular format detected.
+Importing tabular file: AD_2021.b37.filtered
+Checking for empty columns.
+Removing 1 empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/AD_2021_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/AD_2021_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/AD_2021_MSS_log_output.txt
+Messages will not be printed to terminal.
+Reading header.
+Tabular format detected.
+Importing tabular file: BMI_2018.b37.filtered
+Checking for empty columns.
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BMI_2018_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BMI_2018_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BMI_2018_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Reading header.
+Tabular format detected.
+Importing tabular file: BP_2025.b37.filtered
+Checking for empty columns.
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BP_2025_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BP_2025_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BP_2025_MSS_log_output.txt
+Messages will not be printed to terminal.
+Reading header.
+Tabular format detected.
+Importing tabular file: FG_2021.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FG_2021_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FG_2021_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FG_2021_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Reading header.
+Tabular format detected.
+Importing tabular file: FI_2021.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FI_2021_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FI_2021_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FI_2021_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Reading header.
+Tabular format detected.
+Importing tabular file: G2H_2021.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/G2H_2021_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/G2H_2021_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/G2H_2021_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Reading header.
+Tabular format detected.
+Importing tabular file: HBAC1_2021.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HBAC1_2021_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HBAC1_2021_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HBAC1_2021_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Reading header.
+Tabular format detected.
+Importing tabular file: HEIGHTb_2022.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTb_2022_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTb_2022_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTb_2022_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Reading header.
+Tabular format detected.
+Importing tabular file: HEIGHTc_2022.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTc_2022_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTc_2022_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTc_2022_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning messages:
+1: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+2: In withCallingHandlers(expr, message = function(c) if (inherits(c,  :
+  NAs introduced by coercion
+Reading header.
+Tabular format detected.
+Importing tabular file: MD_2025.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/MD_2025_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/MD_2025_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/MD_2025_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning messages:
+1: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+2: In withCallingHandlers(expr, message = function(c) if (inherits(c,  :
+  NAs introduced by coercion
+3: In .merge_two_Seqinfo_objects(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': 23
+  - in 'y': X, Y, MT
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+4: In .merge_two_Seqinfo_objects(x, y) :
+  Each of the 2 combined objects has sequence levels not in the other:
+  - in 'x': X, Y, MT
+  - in 'y': 23
+  Make sure to always combine/compare objects based on the same reference
+  genome (use suppressWarnings() to suppress this warning).
+Reading header.
+Tabular format detected.
+Importing tabular file: SCZ_2022.b37.filtered
+Checking for empty columns.
+Warning: there is no colname for the frq, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/SCZ_2022_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/SCZ_2022_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/SCZ_2022_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning messages:
+1: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+2: In withCallingHandlers(expr, message = function(c) if (inherits(c,  :
+  NAs introduced by coercion
+Reading header.
+Tabular format detected.
+Importing tabular file: T2D_2024.b37.filtered
+Checking for empty columns.
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS_log_output.txt
+Messages will not be printed to terminal.

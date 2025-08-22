@@ -1,0 +1,17 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) slurm/23.02.6
+Reading header.
+Tabular format detected.
+Importing tabular file: T2D_2024.b37.filtered.SNP
+Checking for empty columns.
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/T2D_2024_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 

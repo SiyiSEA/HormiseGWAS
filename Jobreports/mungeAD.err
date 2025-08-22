@@ -1,0 +1,28 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) slurm/23.02.6
+Reading header.
+Tabular format detected.
+Importing tabular file: AD_2021.b37.filtered.noNA
+Checking for empty columns.
+Warning: there is no colname for the effect allele, please check the data!
+Formatted summary statistics will be saved to ==>  /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/AD_2021_MSS.tsv
+Saving output messages to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/AD_2021_MSS_log_msg.txt
+Any runtime errors will be saved to:
+/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/AD_2021_MSS_log_output.txt
+Messages will not be printed to terminal.
+Returning path to saved data.
+Warning message:
+replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ 
+Error: unexpected ')' in "save(flag_z, flag_n, flag_rsid, setpath, reformatted, file = paste0(phenotype,"_MSS.RData")) = paste0(phenotype,"_MSS.RData"))"
+Execution halted
+Reading header.
+Tabular format detected.
+Importing tabular file: T2D_2024.b37.filtered
+Checking for empty columns.
+Reading header.
+Tabular format detected.
+Importing tabular file: BP_2025.b37.filtered
+Checking for empty columns.

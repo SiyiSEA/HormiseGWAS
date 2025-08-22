@@ -1,0 +1,55 @@
+Dealing with datasets localed in /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+          SNP   CHR        BP     A1     A2  INFO      OR     SE      P   ngt
+       <char> <int>     <int> <char> <char> <num>   <num>  <num>  <num> <int>
+1:       rs10     7  92383888      A      C 0.812 1.01045 0.0175 0.5538     1
+2:  rs1000000    12 126890980      G      A 0.975 1.00190 0.0089 0.8348    23
+3: rs10000003     4  57561647      A      G 0.976 1.01187 0.0080 0.1427     1
+                                                              Direction HetISqt
+                                                                 <char>   <num>
+1: ---+++--+++-++-+-++-??-++++-+------+--?++++++++-++-+-++++-+-++-?--??     0.0
+2: ---++-+-++------+--++-++-+-+++-++++---+-----+-++--++------+-+++++-++     2.8
+3: ---+++--+++-+++-+++-+----+-++-+---+-++++--+--+-+++--+--+-++++-++-++-     0.0
+   HetDf HetPVa N_CAS  N_CON Neff_half HRC_FRQ_A1
+   <int>  <num> <int>  <int>     <num>      <num>
+1:    61 0.7966 52947 719963  71385.55  0.0529979
+2:    67 0.4130 59287 781022  81683.64  0.7773810
+3:    67 0.5914 59287 781022  81683.64  0.3000710
+[1] "BP_2025.b37.filtered needs z computation."
+[1] "BP_2025.b37.filtered has rsid."
+[1] "BP_2025.b37.filtered doesn't need n computation."
+[1] "Actually!! BP_2025.b37.filtered needs n computation."
+[1] "Setting effect_allele for BP_2025.b37.filtered"
+[1] "Setting non_effect_allele for BP_2025.b37.filtered"
+[1] "Setting FRQ for BP_2025.b37.filtered"
+          SNP   CHR        BP effect_allele non_effect_allele  INFO      OR
+       <char> <int>     <int>        <char>            <char> <num>   <num>
+1:       rs10     7  92383888             A                 C 0.812 1.01045
+2:  rs1000000    12 126890980             G                 A 0.975 1.00190
+3: rs10000003     4  57561647             A                 G 0.976 1.01187
+       SE      P   ngt
+    <num>  <num> <int>
+1: 0.0175 0.5538     1
+2: 0.0089 0.8348    23
+3: 0.0080 0.1427     1
+                                                              Direction HetISqt
+                                                                 <char>   <num>
+1: ---+++--+++-++-+-++-??-++++-+------+--?++++++++-++-+-++++-+-++-?--??     0.0
+2: ---++-+-++------+--++-++-+-+++-++++---+-----+-++--++------+-+++++-++     2.8
+3: ---+++--+++-+++-+++-+----+-++-+---+-++++--+--+-+++--+--+-++++-++-++-     0.0
+   HetDf HetPVa N_CAS  N_CON Neff_half       FRQ
+   <int>  <num> <int>  <int>     <num>     <num>
+1:    61 0.7966 52947 719963  71385.55 0.0529979
+2:    67 0.4130 59287 781022  81683.64 0.7773810
+3:    67 0.5914 59287 781022  81683.64 0.3000710
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BP_2025_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BP_2025_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BP_2025_MSS_log_output.txt"
+
+

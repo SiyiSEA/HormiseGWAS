@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/lustre/home/sww208/Software/ldsc/munge_sumstats.py", line 745, in <module>
+    munge_sumstats(parser.parse_args(), p=True)
+  File "/lustre/home/sww208/Software/ldsc/munge_sumstats.py", line 686, in munge_sumstats
+    dat = parse_dat(dat_gen, cname_translation, merge_alleles, log, args)
+  File "/lustre/home/sww208/Software/ldsc/munge_sumstats.py", line 301, in parse_dat
+    dat = pd.concat(dat_list, axis=0).reset_index(drop=True)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/core/reshape/concat.py", line 206, in concat
+    copy=copy)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/core/reshape/concat.py", line 239, in __init__
+    raise ValueError('No objects to concatenate')
+ValueError: No objects to concatenate
+Traceback (most recent call last):
+  File "/lustre/home/sww208/Software/ldsc/ldsc.py", line 644, in <module>
+    sumstats.estimate_h2(args, log)
+  File "/lustre/home/sww208/Software/ldsc/ldscore/sumstats.py", line 326, in estimate_h2
+    args, log, args.h2)
+  File "/lustre/home/sww208/Software/ldsc/ldscore/sumstats.py", line 242, in _read_ld_sumstats
+    sumstats = _read_sumstats(args, log, fh, alleles=alleles, dropna=dropna)
+  File "/lustre/home/sww208/Software/ldsc/ldscore/sumstats.py", line 163, in _read_sumstats
+    sumstats = ps.sumstats(fh, alleles=alleles, dropna=dropna)
+  File "/lustre/home/sww208/Software/ldsc/ldscore/parse.py", line 89, in sumstats
+    x = read_csv(fh, usecols=usecols, dtype=dtype_dict, compression=compression)
+  File "/lustre/home/sww208/Software/ldsc/ldscore/parse.py", line 21, in read_csv
+    return pd.read_csv(fh, delim_whitespace=True, na_values='.', **kwargs)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/io/parsers.py", line 655, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/io/parsers.py", line 405, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/io/parsers.py", line 762, in __init__
+    self._make_engine(self.engine)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/io/parsers.py", line 966, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/site-packages/pandas/io/parsers.py", line 1582, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 394, in pandas._libs.parsers.TextReader.__cinit__ (pandas/_libs/parsers.c:4209)
+  File "pandas/_libs/parsers.pyx", line 651, in pandas._libs.parsers.TextReader._setup_parser_source (pandas/_libs/parsers.c:7620)
+  File "/lustre/home/sww208/.conda/envs/ldsc/lib/python2.7/gzip.py", line 94, in __init__
+    fileobj = self.myfileobj = __builtin__.open(filename, mode or 'rb')
+IOError: [Errno 2] No such file or directory: 'BP_2025.sumstats.gz'

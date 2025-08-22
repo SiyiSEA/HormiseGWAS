@@ -1,0 +1,471 @@
+Dealing with datasets localed in /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered
+AD_2021======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele   z_score
+        <int>              <int>        <char>       <char>     <num>
+1:          1              14773             T            C  1.371240
+2:          1              14860             T            G -1.275874
+3:          1              17101             C            G -0.471057
+   effect_allele_frequency p_value     n
+                     <num>   <num> <int>
+1:                 0.01735  0.1703 74004
+2:                 0.01177  0.2020 74004
+3:                 0.01745  0.6376 74004
+[1] "AD_2021.b37.filtered doesn't need z computation."
+[1] "AD_2021.b37.filtered doesn't has rsid."
+[1] "AD_2021.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for AD_2021.b37.filtered"
+[1] "Setting non_effect_allele for AD_2021.b37.filtered"
+[1] "Setting FRQ for AD_2021.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele   z_score
+        <int>              <int>        <char>            <char>     <num>
+1:          1              14773             T                 C  1.371240
+2:          1              14860             T                 G -1.275874
+3:          1              17101             C                 G -0.471057
+       FRQ p_value     n
+     <num>   <num> <int>
+1: 0.01735  0.1703 74004
+2: 0.01177  0.2020 74004
+3: 0.01745  0.6376 74004
+BMI_2018======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+     CHR       POS        SNP Tested_Allele Other_Allele
+   <int>     <int>     <char>        <char>       <char>
+1:     7  92383888       rs10             A            C
+2:    12 126890980  rs1000000             A            G
+3:     4  21618674 rs10000010             T            C
+   Freq_Tested_Allele_in_HRS    BETA     SE     P      N
+                       <num>   <num>  <num> <num>  <num>
+1:                   0.06431  0.0013 0.0042  0.75 598895
+2:                   0.22190  0.0001 0.0021  0.96 689928
+3:                   0.50860 -0.0001 0.0016  0.94 785319
+[1] "BMI_2018.b37.filtered needs z computation."
+[1] "BMI_2018.b37.filtered has rsid."
+[1] "BMI_2018.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for BMI_2018.b37.filtered"
+[1] "Setting non_effect_allele for BMI_2018.b37.filtered"
+[1] "Setting FRQ for BMI_2018.b37.filtered"
+     CHR       POS        SNP effect_allele non_effect_allele     FRQ    BETA
+   <int>     <int>     <char>        <char>            <char>   <num>   <num>
+1:     7  92383888       rs10             A                 C 0.06431  0.0013
+2:    12 126890980  rs1000000             A                 G 0.22190  0.0001
+3:     4  21618674 rs10000010             T                 C 0.50860 -0.0001
+       SE     P      N
+    <num> <num>  <num>
+1: 0.0042  0.75 598895
+2: 0.0021  0.96 689928
+3: 0.0016  0.94 785319
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BMI_2018_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BMI_2018_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/BMI_2018_MSS_log_output.txt"
+
+
+BP_2025======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+          SNP   CHR        BP     A1     A2  INFO      OR     SE      P   ngt
+       <char> <int>     <int> <char> <char> <num>   <num>  <num>  <num> <int>
+1:       rs10     7  92383888      A      C 0.812 1.01045 0.0175 0.5538     1
+2:  rs1000000    12 126890980      G      A 0.975 1.00190 0.0089 0.8348    23
+3: rs10000003     4  57561647      A      G 0.976 1.01187 0.0080 0.1427     1
+                                                              Direction HetISqt
+                                                                 <char>   <num>
+1: ---+++--+++-++-+-++-??-++++-+------+--?++++++++-++-+-++++-+-++-?--??     0.0
+2: ---++-+-++------+--++-++-+-+++-++++---+-----+-++--++------+-+++++-++     2.8
+3: ---+++--+++-+++-+++-+----+-++-+---+-++++--+--+-+++--+--+-++++-++-++-     0.0
+   HetDf HetPVa   Nca    Nco Neff_half HRC_FRQ_A1
+   <int>  <num> <int>  <int>     <num>      <num>
+1:    61 0.7966 52947 719963  71385.55  0.0529979
+2:    67 0.4130 59287 781022  81683.64  0.7773810
+3:    67 0.5914 59287 781022  81683.64  0.3000710
+[1] "BP_2025.b37.filtered needs z computation."
+[1] "BP_2025.b37.filtered has rsid."
+[1] "BP_2025.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for BP_2025.b37.filtered"
+[1] "Setting non_effect_allele for BP_2025.b37.filtered"
+[1] "Setting FRQ for BP_2025.b37.filtered"
+          SNP   CHR        BP effect_allele non_effect_allele  INFO      OR
+       <char> <int>     <int>        <char>            <char> <num>   <num>
+1:       rs10     7  92383888             A                 C 0.812 1.01045
+2:  rs1000000    12 126890980             G                 A 0.975 1.00190
+3: rs10000003     4  57561647             A                 G 0.976 1.01187
+       SE      P   ngt
+    <num>  <num> <int>
+1: 0.0175 0.5538     1
+2: 0.0089 0.8348    23
+3: 0.0080 0.1427     1
+                                                              Direction HetISqt
+                                                                 <char>   <num>
+1: ---+++--+++-++-+-++-??-++++-+------+--?++++++++-++-+-++++-+-++-?--??     0.0
+2: ---++-+-++------+--++-++-+-+++-++++---+-----+-++--++------+-+++++-++     2.8
+3: ---+++--+++-+++-+++-+----+-++-+---+-++++--+--+-+++--+--+-++++-++-++-     0.0
+   HetDf HetPVa   Nca    Nco Neff_half       FRQ
+   <int>  <num> <int>  <int>     <num>     <num>
+1:    61 0.7966 52947 719963  71385.55 0.0529979
+2:    67 0.4130 59287 781022  81683.64 0.7773810
+3:    67 0.5914 59287 781022  81683.64 0.3000710
+FG_2021======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele
+        <int>              <int>        <char>       <char>
+1:         10           10000018             A            G
+2:         10          100000625             A            G
+3:         10          100000645             A            C
+   effect_allele_frequency   beta standard_error p_value sample_size
+                     <num>  <num>          <num>  <char>       <num>
+1:                   0.600 0.0001         0.0019  0.6219      165515
+2:                   0.544 0.0006         0.0018  0.8265      165746
+3:                   0.777 0.0014         0.0022  0.5157      166896
+[1] "FG_2021.b37.filtered doesn't need z computation."
+[1] "FG_2021.b37.filtered doesn't has rsid."
+[1] "FG_2021.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for FG_2021.b37.filtered"
+[1] "Setting non_effect_allele for FG_2021.b37.filtered"
+[1] "Setting FRQ for FG_2021.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele   FRQ   beta
+        <int>              <int>        <char>            <char> <num>  <num>
+1:         10           10000018             A                 G 0.600 0.0001
+2:         10          100000625             A                 G 0.544 0.0006
+3:         10          100000645             A                 C 0.777 0.0014
+   standard_error p_value      N
+            <num>  <char>  <num>
+1:         0.0019  0.6219 165515
+2:         0.0018  0.8265 165746
+3:         0.0022  0.5157 166896
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FG_2021_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FG_2021_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FG_2021_MSS_log_output.txt"
+
+
+FI_2021======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele
+        <int>              <int>        <char>       <char>
+1:         10           10000018             A            G
+2:         10          100000625             A            G
+3:         10          100000645             A            C
+   effect_allele_frequency    beta standard_error p_value sample_size
+                     <num>   <num>          <num>   <num>       <num>
+1:                   0.600 -0.0054         0.0022 0.03577      124123
+2:                   0.544  0.0012         0.0020 0.55860      124247
+3:                   0.777 -0.0001         0.0026 0.96930      125397
+[1] "FI_2021.b37.filtered doesn't need z computation."
+[1] "FI_2021.b37.filtered doesn't has rsid."
+[1] "FI_2021.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for FI_2021.b37.filtered"
+[1] "Setting non_effect_allele for FI_2021.b37.filtered"
+[1] "Setting FRQ for FI_2021.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele   FRQ    beta
+        <int>              <int>        <char>            <char> <num>   <num>
+1:         10           10000018             A                 G 0.600 -0.0054
+2:         10          100000625             A                 G 0.544  0.0012
+3:         10          100000645             A                 C 0.777 -0.0001
+   standard_error p_value      N
+            <num>   <num>  <num>
+1:         0.0022 0.03577 124123
+2:         0.0020 0.55860 124247
+3:         0.0026 0.96930 125397
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FI_2021_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FI_2021_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/FI_2021_MSS_log_output.txt"
+
+
+G2H_2021======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele
+        <int>              <int>        <char>       <char>
+1:         10           10000018             A            G
+2:         10          100000625             A            G
+3:         10          100000645             A            C
+   effect_allele_frequency    beta standard_error p_value sample_size
+                     <num>   <num>          <num>   <num>       <num>
+1:                   0.600 -0.0089         0.0094  0.1152     44207.7
+2:                   0.544  0.0063         0.0088  0.7022     45269.0
+3:                   0.777 -0.0116         0.0106  0.2320     45269.1
+[1] "G2H_2021.b37.filtered doesn't need z computation."
+[1] "G2H_2021.b37.filtered doesn't has rsid."
+[1] "G2H_2021.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for G2H_2021.b37.filtered"
+[1] "Setting non_effect_allele for G2H_2021.b37.filtered"
+[1] "Setting FRQ for G2H_2021.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele   FRQ    beta
+        <int>              <int>        <char>            <char> <num>   <num>
+1:         10           10000018             A                 G 0.600 -0.0089
+2:         10          100000625             A                 G 0.544  0.0063
+3:         10          100000645             A                 C 0.777 -0.0116
+   standard_error p_value       N
+            <num>   <num>   <num>
+1:         0.0094  0.1152 44207.7
+2:         0.0088  0.7022 45269.0
+3:         0.0106  0.2320 45269.1
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/G2H_2021_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/G2H_2021_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/G2H_2021_MSS_log_output.txt"
+
+
+HBAC1_2021======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele
+        <int>              <int>        <char>       <char>
+1:         10           10000018             A            G
+2:         10          100000625             A            G
+3:         10          100000645             A            C
+   effect_allele_frequency    beta standard_error p_value sample_size
+                     <num>   <num>          <num>   <num>       <num>
+1:                   0.600 -0.0004         0.0014 0.96340      127524
+2:                   0.544  0.0032         0.0013 0.02507      128610
+3:                   0.777 -0.0012         0.0016 0.31370      128610
+[1] "HBAC1_2021.b37.filtered doesn't need z computation."
+[1] "HBAC1_2021.b37.filtered doesn't has rsid."
+[1] "HBAC1_2021.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for HBAC1_2021.b37.filtered"
+[1] "Setting non_effect_allele for HBAC1_2021.b37.filtered"
+[1] "Setting FRQ for HBAC1_2021.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele   FRQ    beta
+        <int>              <int>        <char>            <char> <num>   <num>
+1:         10           10000018             A                 G 0.600 -0.0004
+2:         10          100000625             A                 G 0.544  0.0032
+3:         10          100000645             A                 C 0.777 -0.0012
+   standard_error p_value      N
+            <num>   <num>  <num>
+1:         0.0014 0.96340 127524
+2:         0.0013 0.02507 128610
+3:         0.0016 0.31370 128610
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HBAC1_2021_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HBAC1_2021_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HBAC1_2021_MSS_log_output.txt"
+
+
+HEIGHTb_2022======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele        beta
+        <int>              <int>        <char>       <char>       <num>
+1:          1             734462             A            G 0.004656900
+2:          1             752721             G            A 0.000544089
+3:          1             754182             G            A 0.001333110
+   standard_error effect_allele_frequency  p_value variant_id       n
+            <num>                   <num>   <char>     <char>   <int>
+1:        0.01100                   0.893 0.672866 rs12564807  112953
+2:        0.00284                   0.840  0.84811  rs3131972  615932
+3:        0.00185                   0.865 0.470389  rs3131969 1100634
+[1] "HEIGHTb_2022.b37.filtered needs z computation."
+[1] "HEIGHTb_2022.b37.filtered has rsid."
+[1] "HEIGHTb_2022.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for HEIGHTb_2022.b37.filtered"
+[1] "Setting non_effect_allele for HEIGHTb_2022.b37.filtered"
+[1] "Setting FRQ for HEIGHTb_2022.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele        beta
+        <int>              <int>        <char>            <char>       <num>
+1:          1             734462             A                 G 0.004656900
+2:          1             752721             G                 A 0.000544089
+3:          1             754182             G                 A 0.001333110
+   standard_error   FRQ  p_value variant_id       n
+            <num> <num>   <char>     <char>   <int>
+1:        0.01100 0.893 0.672866 rs12564807  112953
+2:        0.00284 0.840  0.84811  rs3131972  615932
+3:        0.00185 0.865 0.470389  rs3131969 1100634
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTb_2022_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTb_2022_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTb_2022_MSS_log_output.txt"
+
+
+HEIGHTc_2022======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+          SNPID       RSID   CHR    POS EFFECT_ALLELE OTHER_ALLELE
+         <char>     <char> <int>  <int>        <char>       <char>
+1: 1:734462:A:G rs12564807     1 734462             A            G
+2: 1:752721:A:G  rs3131972     1 752721             G            A
+3: 1:754182:A:G  rs3131969     1 754182             G            A
+   EFFECT_ALLELE_FREQ        BETA      SE        P       N
+                <num>       <num>   <num>   <char>   <int>
+1:              0.893 0.004656900 0.01100 0.672866  112953
+2:              0.840 0.000544089 0.00284  0.84811  615932
+3:              0.865 0.001333110 0.00185 0.470389 1100634
+[1] "HEIGHTc_2022.b37.filtered needs z computation."
+[1] "HEIGHTc_2022.b37.filtered has rsid."
+[1] "HEIGHTc_2022.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for HEIGHTc_2022.b37.filtered"
+[1] "Setting non_effect_allele for HEIGHTc_2022.b37.filtered"
+[1] "Setting FRQ for HEIGHTc_2022.b37.filtered"
+          SNPID variant_id   CHR    POS EFFECT_ALLELE non_effect_allele   FRQ
+         <char>     <char> <int>  <int>        <char>            <char> <num>
+1: 1:734462:A:G rs12564807     1 734462             A                 G 0.893
+2: 1:752721:A:G  rs3131972     1 752721             G                 A 0.840
+3: 1:754182:A:G  rs3131969     1 754182             G                 A 0.865
+          BETA      SE        P       N
+         <num>   <num>   <char>   <int>
+1: 0.004656900 0.01100 0.672866  112953
+2: 0.000544089 0.00284  0.84811  615932
+3: 0.001333110 0.00185 0.470389 1100634
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTc_2022_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTc_2022_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/HEIGHTc_2022_MSS_log_output.txt"
+
+
+MD_2025======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   chromosome base_pair_location effect_allele other_allele        beta
+        <int>              <int>        <char>       <char>       <num>
+1:          1             752566             G            A 0.002796087
+2:          1             752721             A            G 0.002696362
+3:          1             753541             A            G 0.002696362
+   standard_error effect_allele_frequency p_value      rsid  info
+            <num>                   <num>   <num>    <char> <num>
+1:         0.0047                   0.179  0.5535 rs3094315 0.843
+2:         0.0048                   0.181  0.5773 rs3131972 0.829
+3:         0.0048                   0.150  0.5712 rs2073813 0.880
+   effect_allele_frequency_cases         n ncases ncontrols heterogeneity_i2
+                           <num>     <num>  <int>     <int>            <num>
+1:                         0.177  927713.5 341197    989052             39.1
+2:                         0.180  934966.9 343527   1004757             33.4
+3:                         0.147 1014821.7 364797   1341816             27.5
+   heterogeneity_df heterogeneity_p_value
+              <int>                 <num>
+1:               12               0.07303
+2:               15               0.09513
+3:               17               0.13490
+[1] "MD_2025.b37.filtered needs z computation."
+[1] "MD_2025.b37.filtered has rsid."
+[1] "MD_2025.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for MD_2025.b37.filtered"
+[1] "Setting non_effect_allele for MD_2025.b37.filtered"
+[1] "Setting FRQ for MD_2025.b37.filtered"
+   chromosome base_pair_location effect_allele non_effect_allele        beta
+        <int>              <int>        <char>            <char>       <num>
+1:          1             752566             G                 A 0.002796087
+2:          1             752721             A                 G 0.002696362
+3:          1             753541             A                 G 0.002696362
+   standard_error   FRQ p_value      rsid  info effect_allele_frequency_cases
+            <num> <num>   <num>    <char> <num>                         <num>
+1:         0.0047 0.179  0.5535 rs3094315 0.843                         0.177
+2:         0.0048 0.181  0.5773 rs3131972 0.829                         0.180
+3:         0.0048 0.150  0.5712 rs2073813 0.880                         0.147
+           n ncases ncontrols heterogeneity_i2 heterogeneity_df
+       <num>  <int>     <int>            <num>            <int>
+1:  927713.5 341197    989052             39.1               12
+2:  934966.9 343527   1004757             33.4               15
+3: 1014821.7 364797   1341816             27.5               17
+   heterogeneity_p_value
+                   <num>
+1:               0.07303
+2:               0.09513
+3:               0.13490
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/MD_2025_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/MD_2025_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/MD_2025_MSS_log_output.txt"
+
+
+SCZ_2022======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   CHROM         ID       POS     A1     A2  FCAS  FCON IMPINFO         BETA
+   <int>     <char>     <int> <char> <char> <num> <num>   <num>        <num>
+1:     8 rs62513865 101592213      C      T 0.930 0.927   0.963  0.011997738
+2:     8 rs79643588 106973048      G      A 0.907 0.906   0.997 -0.008596847
+3:     8 rs17396518 108690829      T      G 0.565 0.566   0.985 -0.002102208
+       SE   PVAL  NCAS  NCON     NEFF
+    <num>  <num> <int> <int>    <num>
+1: 0.0171 0.4847 53386 77258 58749.13
+2: 0.0148 0.5605 53386 77258 58749.13
+3: 0.0087 0.8145 53386 77258 58749.13
+[1] "SCZ_2022.b37.filtered needs z computation."
+[1] "SCZ_2022.b37.filtered has rsid."
+[1] "SCZ_2022.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for SCZ_2022.b37.filtered"
+[1] "Setting non_effect_allele for SCZ_2022.b37.filtered"
+[1] "Setting FRQ for SCZ_2022.b37.filtered"
+   CHROM variant_id       POS effect_allele non_effect_allele  FCAS  FCON
+   <int>     <char>     <int>        <char>            <char> <num> <num>
+1:     8 rs62513865 101592213             C                 T 0.930 0.927
+2:     8 rs79643588 106973048             G                 A 0.907 0.906
+3:     8 rs17396518 108690829             T                 G 0.565 0.566
+   IMPINFO         BETA     SE   PVAL  NCAS  NCON     NEFF
+     <num>        <num>  <num>  <num> <int> <int>    <num>
+1:   0.963  0.011997738 0.0171 0.4847 53386 77258 58749.13
+2:   0.997 -0.008596847 0.0148 0.5605 53386 77258 58749.13
+3:   0.985 -0.002102208 0.0087 0.8145 53386 77258 58749.13
+$sumstats
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/SCZ_2022_MSS.tsv"
+
+$log_files
+$log_files$MungeSumstats_log_msg
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/SCZ_2022_MSS_log_msg.txt"
+
+$log_files$MungeSumstats_log_output
+[1] "/lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered/SCZ_2022_MSS_log_output.txt"
+
+
+T2D_2024======================================================
+[1] "Working directory set to: /lustre/home/sww208/GoDMC/GADatasets/GWASstatsFiltered"
+   Chromsome  Position EffectAllele NonEffectAllele    Beta     SE    EAF
+       <int>     <int>       <char>          <char>   <num>  <num>  <num>
+1:         8 135908647            A               G -0.0020 0.0046 0.2034
+2:        11  97895884            C               G  0.0215 0.0081 0.0554
+3:        18    814730            C               G -0.0043 0.0059 0.8867
+       Pval Ncases Ncontrols     Neff
+     <char>  <int>     <num>    <num>
+1:   0.6633 242283   1569730 751754.7
+2: 0.007924 242283   1569730 751754.7
+3:   0.4592 242283   1569730 751754.7
+[1] "T2D_2024.b37.filtered needs z computation."
+[1] "T2D_2024.b37.filtered doesn't has rsid."
+[1] "T2D_2024.b37.filtered doesn't need n computation."
+[1] "Setting effect_allele for T2D_2024.b37.filtered"
+[1] "Setting non_effect_allele for T2D_2024.b37.filtered"
+[1] "Setting FRQ for T2D_2024.b37.filtered"
+   Chromsome  Position effect_allele non_effect_allele    Beta     SE    FRQ
+       <int>     <int>        <char>            <char>   <num>  <num>  <num>
+1:         8 135908647             A                 G -0.0020 0.0046 0.2034
+2:        11  97895884             C                 G  0.0215 0.0081 0.0554
+3:        18    814730             C                 G -0.0043 0.0059 0.8867
+       Pval Ncases Ncontrols     Neff
+     <char>  <int>     <num>    <num>
+1:   0.6633 242283   1569730 751754.7
+2: 0.007924 242283   1569730 751754.7
+3:   0.4592 242283   1569730 751754.7
