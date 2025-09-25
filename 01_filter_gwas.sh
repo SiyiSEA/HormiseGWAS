@@ -47,7 +47,7 @@ filter_gwas(){
 
     cd ${DATAPATH}/${ID} || exit 1
 
-    MAFcol=$(head -n 1 ${ID}_header.tsv | tr '\t' '\n' | nl | grep -E "effect_allele_frequency|MAF" | cut -f 1)
+    MAFcol=$(head -n 1 ${ID}_header.tsv | tr '\t' '\n' | nl | grep -E "effect_allele_frequency|MAF|EAF|EAF_HRC" | cut -f 1)
     INFOcol=$(head -n 1 ${ID}_header.tsv | tr '\t' '\n' | nl | grep -E "INFO" | cut -f 1)
 
     Rscript ${RscriptsPath}/filter_gwas.R \
@@ -57,7 +57,7 @@ filter_gwas(){
         $MAFcol \
         $INFOcol
 
-    rm "${ID}.tsv"
+    #rm "${ID}_header.tsv"
 }
 
 
@@ -84,3 +84,41 @@ filter_gwas INT_2017 ${DataPath}
 # MDD_2025 ###################################################
 filter_gz MDD_2025 GCST90468123.tsv.gz ${DataPath}
 filter_gwas MDD_2025 ${DataPath}
+
+# Sep ###############################################################
+
+# from thessgac
+# EA_2016 ###################################################
+filter_gz EA_2016 EduYears_Main.txt ${DataPath}
+filter_gwas EA_2016 ${DataPath}
+awk 'NR==1 {print $0 "\tN"; next} {print $0 "\t293723"}' ${DataPath}/EA_2016/EA_2016.LDSCinput > ${DataPath}/EA_2016/EA_2016.thessgac
+awk 'NR==1 {$1="variant_id"; $2="Chromosome"; $3="Position"; $4="effect_allele"; $5="non_effect_allele"; $6="FRQ"; $7="beta"; $8="SE"; $9="Pvalue"; $10="N"} {print}' OFS="\t" ${DataPath}/EA_2016/EA_2016.thessgac > ${DataPath}/EA_2016/EA_2016.LDSCinput
+
+# EA_2022 ###################################################
+filter_gz EA_2022 EA4_dominance_excl_23andMe.txt.gz ${DataPath}
+mv ${DataPath}/EA_2022/EA_2022.tsv ${DataPath}/EA_2022/EA_2022.tsv.temp
+awk '{print $1, $2, $3, $4, $5, $6, $8, $9, $12}' OFS="\t" ${DataPath}/EA_2022/EA_2022.tsv.temp > ${DataPath}/EA_2022/EA_2022.tsv.temp2
+awk 'NR==1 {print $0 "\tN"; next} {print $0 "\t765283"}' ${DataPath}/EA_2022/EA_2022.tsv.temp2 > ${DataPath}/EA_2022/EA_2022.tsv
+head -3 ${DataPath}/EA_2022/EA_2022.tsv > ${DataPath}/EA_2022/EA_2022_header.tsv
+filter_gwas EA_2022 ${DataPath}
+mv ${DataPath}/EA_2022/EA_2022.LDSCinput ${DataPath}/EA_2022/EA_2022.thessgac
+awk 'NR==1 {$1="variant_id"; $2="Chromosome"; $3="Position"; $4="effect_allele"; $5="non_effect_allele"; $6="FRQ"; $7="beta"; $8="SE"; $9="Pvalue"; $10="N"} {print}' OFS="\t" ${DataPath}/EA_2022/EA_2022.thessgac > ${DataPath}/EA_2022/EA_2022.LDSCinput
+
+# from GIANT
+# WC_2015 ###################################################
+
+
+
+# WHRBMI_2018 ###################################################
+# no extract header
+
+# WHR_2015
+
+# BMI_2018
+
+# BMI_2015
+
+# HEIGHT_2010
+
+# HEIGHT_2022
+

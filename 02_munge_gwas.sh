@@ -3,14 +3,14 @@
 #SBATCH -p mrcq # submit to the serial queue
 #SBATCH -A Research_Project-MRC190311 # research project to submit under.
 #SBATCH --mail-type=END # send email at job completion
-#SBATCH --output=Jobreports/mungeT2D.out
-#SBATCH --error=Jobreports/mungeT2D.err
-#SBATCH --job-name=mungeT2D
+#SBATCH --output=Jobreports/mungeEA2.out
+#SBATCH --error=Jobreports/mungeEA2.err
+#SBATCH --job-name=mungeEA2
 #SBATCH --nodes=1
 #SBATCH --mem=20G
 #SBATCH --ntasks=2
 #SBATCH --time=0-15:00:00
-#SBATCH --array=2
+#SBATCH --array=1
 
 ############################################################################################
 #       munge_MSS GWAS
@@ -28,11 +28,11 @@ conda activate RGreatSquareRoot
 if [ "${SLURM_ARRAY_TASK_ID}" == 1 ] ;then
     DataPath="/lustre/home/sww208/GoDMC/GADatasets/OtherGWASstats/"
     echo "Dealing with datasets localed in $DataPath"
-    for ID in PD_2019 NEA_2021 CEA_2021 CRP_2022 INT_2017 MDD_2025
+    for ID in EA_2022 #EA_2016 PD_2019 NEA_2021 CEA_2021 CRP_2022 INT_2017 MDD_2025
     do  
         echo "$ID======================================================"
         Rscript $RscriptsPath/munge_MSS.R \
-                            $DataPath \
+                            $DataPath/$ID \
                             $ID.LDSCinput \
                             $ID
     done

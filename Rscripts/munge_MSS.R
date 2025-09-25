@@ -33,7 +33,7 @@ if ( grepl(c("z|z_score"), collist, ignore.case = TRUE) ) {
 
 # Check if the data needs rsid
 
-if ( grepl(c("variant_id|RSID|ID"), collist, ignore.case = TRUE) ) {
+if ( grepl(c("variant_id|RSID|ID|rsID"), collist, ignore.case = TRUE) ) {
   flag_rsid <- TRUE
   data.table::setnames(GWAresult, c("RSID"), c("variant_id"), skip_absent = T)
   data.table::setnames(GWAresult, c("ID"), c("variant_id"), skip_absent = T)
@@ -69,12 +69,13 @@ if ("effect_allele" %in% colnames(GWAresult)){
   print(paste0(filename, " has effect_allele."))
 }else{
   print(paste0("Setting effect_allele for ", filename))
-  if (grepl(c("A1|tested_allele|EffectAllele"), collist, ignore.case = TRUE)){
+  if (grepl(c("A1|tested_allele|EffectAllele|Effect_allele"), collist, ignore.case = TRUE)){
     data.table::setnames(GWAresult, c("A1"), c("effect_allele"), skip_absent = T)
     data.table::setnames(GWAresult, c("tested_allele"), c("effect_allele"), skip_absent = T)
     data.table::setnames(GWAresult, c("Tested_Allele"), c("effect_allele"), skip_absent = T)
     data.table::setnames(GWAresult, c("EffectAllele"), c("effect_allele"), skip_absent = T)
     data.table::setnames(GWAresult, c("EFFECT_ALLELE"), c("effect_allele"), skip_absent = T)
+    data.table::setnames(GWAresult, c("Effect_allele"), c("effect_allele"), skip_absent = T)
   }else{
     message("Warning: there is no colname for the effect allele, please check the data!")
   }
@@ -90,6 +91,7 @@ if ("non_effect_allele" %in% colnames(GWAresult)){
     data.table::setnames(GWAresult, c("OTHER_ALLELE"), c("non_effect_allele"), skip_absent = T)
     data.table::setnames(GWAresult, c("A2"), c("non_effect_allele"), skip_absent = T)
     data.table::setnames(GWAresult, c("NonEffectAllele"), c("non_effect_allele"), skip_absent = T)
+    data.table::setnames(GWAresult, c("Other_allele"), c("non_effect_allele"), skip_absent = T)
   }else{
     message("Warning: there is no colname for the non_effect_allele, please check the data!")
   }
@@ -138,4 +140,4 @@ reformatted <- MungeSumstats::format_sumstats(path = GWAresult,
                                           log_folder = setpath)
 
 print(head(reformatted))
-save(flag_z, flag_n, flag_rsid, setpath, reformatted, file = paste0(phenotype,"_MSS.RData"))
+save(flag_z, flag_n, flag_rsid, reformatted, file = paste0(phenotype,"_MSS.RData"))
